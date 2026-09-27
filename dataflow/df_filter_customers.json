@@ -48,8 +48,10 @@
 				"dsinptcust filter(Country == 'United States of America') ~> filterbyCountry",
 				"filterbyCountry sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
+				"     partitionFileNames:[''],",
 				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> dsoutuputCust"
+				"     skipDuplicateMapOutputs: true,",
+				"     partitionBy('hash', 1)) ~> dsoutuputCust"
 			]
 		}
 	}
