@@ -1,0 +1,15 @@
+{
+	"name": "iLearn",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "cf587097-32e2-46ae-b97b-c24f64a9b3bd",
+		"tenantId": "be075bb9-dffb-4400-9363-da7188280672"
+	}
+}
