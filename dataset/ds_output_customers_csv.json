@@ -5,11 +5,21 @@
 			"referenceName": "ls_ilearnstorage",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"outputfile": {
+				"type": "string",
+				"defaultValue": "customer-100000.csv"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().outputfile",
+					"type": "Expression"
+				},
 				"container": "output"
 			},
 			"columnDelimiter": ",",
