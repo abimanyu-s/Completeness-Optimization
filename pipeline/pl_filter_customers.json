@@ -27,6 +27,12 @@
 				}
 			}
 		],
+		"parameters": {
+			"filename": {
+				"type": "string",
+				"defaultValue": "customers-100000.csv"
+			}
+		},
 		"annotations": []
 	}
 }
