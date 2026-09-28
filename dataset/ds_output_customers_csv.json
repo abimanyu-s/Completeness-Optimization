@@ -7,8 +7,7 @@
 		},
 		"parameters": {
 			"outputfile": {
-				"type": "string",
-				"defaultValue": "customer-100000.csv"
+				"type": "string"
 			}
 		},
 		"annotations": [],
